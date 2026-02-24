@@ -1,4 +1,9 @@
 services:
+  api-perf-redis:
+    image: redis:7
+    container_name: api-perf-redis
+    ports:
+      - "6379:6379"
   mysql:
     image: mysql:8.0
     container_name: api-perf-mysql
